@@ -17,5 +17,10 @@
   ],
   "require":{
     "ezpage/dom":"*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ezpage\\Ezpage\\": ""
+    }
   }
 }
