@@ -1,7 +1,7 @@
 {
   "name": "ezpage/ezpage",
   "description": "",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
@@ -9,7 +9,13 @@
       "email": "qtvhao@gmail.com"
     }
   ],
-  "require": {
-    "illuminate/support": "v5.4.19"
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/ezpage/dom.git"
+    }
+  ],
+  "require":{
+    "ezpage/dom":"*"
   }
 }
