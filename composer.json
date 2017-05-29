@@ -1,0 +1,12 @@
+{
+  "name": "ezpage/ezpage",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Hao Nghiem",
+      "email": "qtvhao@gmail.com"
+    }
+  ]
+}
