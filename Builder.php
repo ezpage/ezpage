@@ -10,6 +10,8 @@ namespace Ezpage\Ezpage;
 
 
 use Ezpage\Dom\Document;
+use Ezpage\Dom\Element\Body;
+use Ezpage\Dom\Element\Head;
 use Ezpage\Dom\Element\Root;
 
 class Builder
@@ -17,7 +19,10 @@ class Builder
     public function renderExample()
     {
         $document = new Document();
-        $document->setRoot(new Root());
+        $root = Root::make()->append(
+            Head::make(),Body::make()
+        );
+        $document->setRoot($root);
         return $document->toHtml();
     }
 }
