@@ -9,10 +9,15 @@
 namespace Ezpage\Ezpage;
 
 
+use Ezpage\Dom\Document;
+use Ezpage\Dom\Element\Root;
+
 class Builder
 {
     public function renderExample()
     {
-        return '';
+        $document = new Document();
+        $document->setRoot(new Root());
+        return $document->toHtml();
     }
 }
